@@ -13,10 +13,12 @@ function App() {
   const [error, setError] = useState("");
 
   // Vite environment variables
-  const base_url =
-    import.meta.env.MODE === "development"
-      ? import.meta.env.VITE_LOCAL_BASE_URL
-      : import.meta.env.VITE_SERVER_BASE_URL;
+  const base_url = import.meta.env.DEV
+    ? import.meta.env.VITE_LOCAL_BASE_URL
+    : import.meta.env.VITE_SERVER_BASE_URL;
+
+  console.log("Vite environment:", import.meta.env.MODE);
+  console.log("API Base URL:", base_url);
 
   console.log("Vite environment:", import.meta.env.MODE);
   console.log("API Base URL:", base_url);
