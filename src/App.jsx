@@ -95,7 +95,7 @@ function App() {
         <div className="row">
           {/* Users List */}
           <div className="col">
-            <h3 className="text-center">Users List</h3>
+            <h3 className="text-center">Registered Users</h3>
 
             {loading && <p>Loading users...</p>}
 
