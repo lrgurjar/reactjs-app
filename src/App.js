@@ -27,7 +27,7 @@ function App() {
         setRecordData(res.data);
       })
       .catch((err) => alert(`Some error occured ==>${err}`));
-  }, []);
+  }, [formData]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -49,14 +49,14 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-light bg-light mb-2">
         <a
-          class="navbar-brand"
+          className="navbar-brand"
           href="https://www.youtube.com/@IntegrationNinjas"
         >
           <img
             src="./logo_p.png"
             width="50"
             height="50"
-            class="d-inline-block"
+            className="d-inline-block"
             alt=""
           />
           Integration Ninja
