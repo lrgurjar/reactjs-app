@@ -1,4 +1,6 @@
-function DetailsCardComponent({ email, sn, userN }) {
+//detail card component
+
+function DetailsCardComponent({ email, sn, userN = "default" }) {
   return (
     <div className="card mb-2">
       <div className="card-body">
